@@ -4,9 +4,9 @@ import urllib.request
 from urllib.parse import quote
 from datetime import datetime
 
-from .assets import AssetsAPI
+from .assets import AssetsScanner
 
-class Communicator(AssetsAPI):
+class Communicator(AssetsScanner):
 
     _wait_before_expire = 5 ### seconds
 
